@@ -20,7 +20,6 @@
     self.rounding = 8;
     self.corners = UIRectCornerAllCorners;
     self.backgroundColor = [UIColor clearColor];
-    animateProgress = -1;
     [self setColor:[UIColor turquoiseColor]];
 }
 //////////////////////////////////////////////////////////////////

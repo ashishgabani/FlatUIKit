@@ -20,7 +20,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.on = YES;
+        [self setOn:YES animated:NO];
         self.onBackgroundColor = [UIColor wetAsphaltColor];
         self.onColor = [UIColor turquoiseColor];
         self.offBackgroundColor = [UIColor colorWithRed:127/255.0f green:140/255.0f blue:141/255.0f alpha:1];
