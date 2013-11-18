@@ -20,3 +20,4 @@
 #import "FTTextField.h"
 #import "FTTextView.h"
 #import "FTSwitch.h"
+#import "FTSlider.h"

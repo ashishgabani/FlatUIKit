@@ -20,11 +20,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        [self setOn:YES animated:NO];
         self.onBackgroundColor = [UIColor wetAsphaltColor];
         self.onColor = [UIColor turquoiseColor];
         self.offBackgroundColor = [UIColor colorWithRed:127/255.0f green:140/255.0f blue:141/255.0f alpha:1];
         self.offColor = [UIColor colorWithRed:189/255.0f green:195/255.0f blue:199/255.0f alpha:1];
+        [self setOn:YES animated:NO];
     }
     return self;
 }
@@ -135,6 +135,13 @@
             self.backgroundColor = self.offBackgroundColor;
         }
     }
+}
+//////////////////////////////////////////////////////////////////
++(FTSwitch*)switchWithColor:(UIColor*)color
+{
+    FTSwitch *view = [[FTSwitch alloc] init];
+    view.onColor = color;
+    return view;
 }
 //////////////////////////////////////////////////////////////////
 

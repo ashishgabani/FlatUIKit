@@ -11,15 +11,28 @@
 
 @interface FTSwitch : BaseSwitchView
 
-//the background color in the on state
+/**
+ Property for the background color in the on state
+*/
 @property(nonatomic,strong)UIColor* onBackgroundColor;
 
-//the text and knob color in the on state
+/**
+ Property for the text and knob color in the on state
+*/
 @property(nonatomic,strong)UIColor* onColor;
 
 @property(nonatomic,strong)UIColor* offBackgroundColor;
 
-//the text and knob color in the off state
+/**
+ Property for the text and knob color in the off state
+ */
 @property(nonatomic,strong)UIColor* offColor;
+
+/**
+ Factory method to initalize a switch and set the onColor.
+ @param color is to set the onColor.
+ @return a new switch object
+ */
++(FTSwitch*)switchWithColor:(UIColor*)color;
 
 @end
