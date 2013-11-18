@@ -18,7 +18,7 @@ button = [FTButton buttonWithColor:[UIColor alizarinColor] raised:YES];
 button.frame = CGRectMake(left, top+6, 80, 40);
 [self.view addSubview:button];
 ```
-image here
+![](https://github.com/daltoniam/FlatUIKit/raw/images/flatButton.png)
 
 ## ProgessView ##
 ```objective-c
@@ -27,7 +27,7 @@ FTProgressView *view = [FTProgressView progressViewWithColor:[UIColor alizarinCo
 view.frame = CGRectMake(12, 86, 150, 30);
 [self.view addSubview:view];
 ```
-image here
+![](https://github.com/daltoniam/FlatUIKit/raw/images/flatProgress.png)
 
 ## SliderView ##
 ```objective-c
@@ -35,7 +35,7 @@ FTSlider *view = [FTSlider sliderWithColor:[UIColor alizarinColor]];
 view.frame = CGRectMake(12, 86, 150, 30);
 [self.view addSubview:view];
 ```
-image here
+![](https://github.com/daltoniam/FlatUIKit/raw/images/flatSlider.png)
 
 ## SwitchView ##
 ```objective-c
@@ -44,7 +44,7 @@ view.onBackgroundColor = [UIColor midnightBlueColor];
 view.frame = CGRectMake(12, 86, 70, 30);
 [self.view addSubview:view];
 ```
-image here
+![](https://github.com/daltoniam/FlatUIKit/raw/images/flatSwitch.png)
 
 
 # Requirements/Dependencies  #
