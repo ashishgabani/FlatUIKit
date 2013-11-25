@@ -6,6 +6,7 @@ A collection of custom draw controls inspired by the Flat theme. Built off UICus
 # Examples #
 
 ## Button ##
+
 ```objective-c
 FTButton *button = [FTButton buttonWithColor:[UIColor alizarinColor] raised:NO];
 [button setTitle:@"Button" forState:UIControlStateNormal];
@@ -21,6 +22,7 @@ button.frame = CGRectMake(left, top+6, 80, 40);
 ![](https://github.com/daltoniam/FlatUIKit/raw/images/flatButton.png)
 
 ## ProgessView ##
+
 ```objective-c
 FTProgressView *view = [FTProgressView progressViewWithColor:[UIColor alizarinColor]];
 [view setProgress:0.75];
@@ -30,6 +32,7 @@ view.frame = CGRectMake(12, 86, 150, 30);
 ![](https://github.com/daltoniam/FlatUIKit/raw/images/flatProgress.png)
 
 ## SliderView ##
+
 ```objective-c
 FTSlider *view = [FTSlider sliderWithColor:[UIColor alizarinColor]];
 view.frame = CGRectMake(12, 86, 150, 30);
@@ -38,6 +41,7 @@ view.frame = CGRectMake(12, 86, 150, 30);
 ![](https://github.com/daltoniam/FlatUIKit/raw/images/flatSlider.png)
 
 ## SwitchView ##
+
 ```objective-c
 FTSwitch *view = [FTSwitch switchWithColor:[UIColor alizarinColor]];
 view.onBackgroundColor = [UIColor midnightBlueColor];
