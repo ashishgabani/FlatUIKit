@@ -21,3 +21,5 @@
 #import "FTTextView.h"
 #import "FTSwitch.h"
 #import "FTSlider.h"
+#import "FTRadialProgressView.h"
+#import "FTActivityView.h"
