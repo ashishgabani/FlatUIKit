@@ -16,7 +16,10 @@
 //////////////////////////////////////////////////////////////////
 -(void)setFlatBarColor:(UIColor*)color
 {
-    [self setBackgroundImage:[UIImage imageWithColor:color size:CGSizeMake(10, 44) cornerRadius:0]
+    float h = 44;
+    if([[UIApplication sharedApplication] respondsToSelector:@selector(ignoreSnapshotOnNextApplicationLaunch)])
+        h = 66;
+    [self setBackgroundImage:[UIImage imageWithColor:color size:CGSizeMake(10, h) cornerRadius:0]
                                        forBarMetrics:UIBarMetricsDefault];
     [self setShadowImage:[UIImage imageWithColor:[UIColor colorWithWhite:0 alpha:0.5] size:CGSizeMake(0.5, 0.5) cornerRadius:0]]; //still not sure about this one
 }

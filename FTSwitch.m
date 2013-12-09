@@ -35,6 +35,12 @@
     self.layer.cornerRadius = self.frame.size.height/2;
 }
 //////////////////////////////////////////////////////////////////
+-(void)setBackgroundColor:(UIColor *)backgroundColor
+{
+    [super setBackgroundColor:backgroundColor];
+    knobView.backgroundColor = [UIColor clearColor];
+}
+//////////////////////////////////////////////////////////////////
 -(UIView*)onViewSetup
 {
     UILabel* label = (UILabel*)[super onViewSetup];
@@ -78,7 +84,7 @@
 //////////////////////////////////////////////////////////////////
 -(void)setOnColor:(UIColor *)onColor
 {
-    _onColor = onColor;
+    [super setOnColor:onColor];
     if(self.isOn)
     {
         CircleView* view = (CircleView*)knobView;
@@ -91,7 +97,7 @@
 //////////////////////////////////////////////////////////////////
 -(void)setOffColor:(UIColor *)offColor
 {
-    _offColor = offColor;
+    [super setOffColor:offColor];
     if(!self.isOn)
     {
         CircleView* view = (CircleView*)knobView;
@@ -104,14 +110,14 @@
 //////////////////////////////////////////////////////////////////
 -(void)setOnBackgroundColor:(UIColor *)onBackgroundColor
 {
-    _onBackgroundColor = onBackgroundColor;
+    [super setOnBackgroundColor:onBackgroundColor];
     if(self.isOn)
         self.backgroundColor = onBackgroundColor;
 }
 //////////////////////////////////////////////////////////////////
 -(void)setOffBackgroundColor:(UIColor *)offBackgroundColor
 {
-    _offBackgroundColor = offBackgroundColor;
+    [super setOffBackgroundColor:offBackgroundColor];
     if(!self.isOn)
         self.backgroundColor = offBackgroundColor;
 }
