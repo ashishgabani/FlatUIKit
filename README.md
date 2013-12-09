@@ -50,6 +50,26 @@ view.frame = CGRectMake(12, 86, 70, 30);
 ```
 ![](https://github.com/daltoniam/FlatUIKit/raw/images/flatSwitch.png)
 
+## ActivityView ##
+
+```objective-c
+FTActivityView *view = [FTActivityView activityViewWithColor:[UIColor alizarinColor]];
+view.frame = CGRectMake(20, 86, 40, 40);
+[self.view addSubview:view];
+[view startAnimating];
+```
+![](https://github.com/daltoniam/FlatUIKit/raw/images/flatActivity.png)
+
+## RadialProgressView ##
+
+```objective-c
+FTRadialProgressView *view = [FTRadialProgressView progressViewWithColor:[UIColor alizarinColor]];
+view.frame = CGRectMake(20, 86, 40, 40);;
+[view setProgress:0.8 animated:YES];
+[self.view addSubview:view];
+```
+![](https://github.com/daltoniam/FlatUIKit/raw/images/flatRadial.png)
+
 
 # Requirements/Dependencies  #
 
