@@ -46,7 +46,7 @@
     UIImage *buttonImageHightlighted = [button capture];
     
     NSMutableDictionary *titleTextAttributes = [UIBarButtonItem titleTextAttribs:appearance forState:UIControlStateNormal];
-    [titleTextAttributes setValue:[NSValue valueWithUIOffset:UIOffsetMake(0, 0)] forKey:UITextAttributeTextShadowOffset];
+    [titleTextAttributes setValue:[NSValue valueWithUIOffset:UIOffsetMake(0, 0)] forKey:NSShadowAttributeName];
     [appearance setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
     [appearance setTitleTextAttributes:titleTextAttributes forState:UIControlStateHighlighted];
     [appearance setTitleTextAttributes:titleTextAttributes forState:UIControlStateDisabled];
